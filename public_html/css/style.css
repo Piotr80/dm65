@@ -1,0 +1,332 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-04-25, 19:58:04
+    Author     : SKeeK
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Amatic SC' , cursive;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+p {
+    font-size: 24px;
+}
+
+/*New navigation*/
+
+.navbar-brand, 
+.navbar-brand:focus, 
+.navbar-brand:active, 
+.navbar-brand:visited
+{
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 3px;
+    margin-left: 16px !important; /*zmienić margines na komórki na mniejszy*/
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+}
+@media (max-width: 575px)  {
+    .navbar-brand {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .navbar-brand {
+        font-size: 16px;
+        margin-left: 2px !important;
+    }
+}
+
+.navbar-brand:hover {
+    color: #000;
+}
+
+.nav-menu,
+.nav-menu:focus,
+.nav-menu:active,
+.nav-menu:visited
+{
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 3px;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+}
+.nav-menu:hover {
+    color: #000;
+}
+
+.nav-contact,
+.nav-contact:focus,
+.nav-contact:active,
+.nav-contact:visited
+{
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 3px;
+    margin-right: 37px !important;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+}
+.nav-contact:hover {
+    color: #000;
+}
+.dropdown-menu {
+    background-color: #222222;
+    font-size: 24px;
+}
+.dropdown-menu>li>a {
+    color: #9d9d9d;
+}
+@media only screen and (max-width: 650px) {
+    .navbar-collapse .navbar-nav {
+        width: 100%;
+        margin: 0 auto;}
+}
+/* Header */
+
+.header {
+    background-image: url("../img/pizza.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+hr {
+    margin-top: 1px;
+}
+
+.addressDesc{
+    padding-top: 15px;
+    text-align: center;
+}
+.companyName {
+    text-align: center;
+    padding-top: 40px;
+   
+}
+.companyName h1 {
+    font-size: 54px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+.phones a:link, a:visited {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+}
+.email a:link, a:visited {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+}
+.map {
+    padding-bottom: 19px;
+    padding-top: 25px;
+}
+.delivery {
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+}
+
+.nav-menu data-balloon {
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 100;
+}
+.footer {
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 25px;
+}
+.btn-home,
+.btn-home:focus,
+.btn-home:active,
+.btn-home:visited
+{
+    color: #B2B1AC;
+    padding-bottom: 10px;
+    font-size: 15px;
+    background: transparent;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.btn-home:hover {
+    color: #0077b5;
+}
+
+.skeek,
+.skeek:focus,
+.skeek:active,
+.skeek:visited
+{
+    color: #B2B1AC;
+    padding-bottom: 10px;
+    font-size: 15px;
+    background: transparent;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+.skeek:hover {
+    color: #0A0000;
+}
+
+.box {
+    display: inline;
+    margin-top: 160px;
+    margin-bottom: 55px;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    -webkit-transition: width 3s, height 3s, -webkit-transform 3s;
+    transition: width 3s, height 3s, transform 3s;
+}
+
+.box:hover{
+    background-color: transparent;
+    width: 500px;
+    height: 500px;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+@media screen and (max-width: 480px) {
+    .box:hover {
+        width: 300px;
+        height: 300px;
+    }
+    .logo :hover {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Modal */
+.modal-title {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+.modal-body li {
+    font-size: 24px;
+}
+.btn-default {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+}
+.btn-default:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: black;
+}
+.close {
+    font-size: 35px;
+}
+
+.modal-backdrop{z-index: 1029}
+
+/*Pizza portal at carousel*/
+.paragrafPP {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*Carousel*/
+.carousel {
+    font-family: 'Raleway' , sans-serif;
+    position: relative;
+    padding-top: 25px;
+}
+.carousel-control {
+    display: none;
+}
+
+.carousel-indicators {
+    bottom: 10px; 
+}
+@media (max-width: 575px)  {
+    .carousel-indicators {
+    margin-bottom: -12px; 
+    }
+}
+
+.carousel-indicators li {
+    border-radius: 0px;
+    border: 0px;
+    background-color: #aaa;
+    width: 24px;
+    margin: 0px 2.5px;
+    height: 6px; }
+
+.carousel-indicators .active {
+    width: 24px;
+    background-color: #204d74;
+    height: 6px;
+    margin: 0px 2.5px; }
+
+.carousel-inner img {
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-caption h2{
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
+}
+@media (max-width: 575px)  {
+    .carousel-caption h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+.carousel-caption p {
+    color: #fff;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px #000000;
+}
+@media (max-width: 575px)  {
+    .carousel-caption p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
